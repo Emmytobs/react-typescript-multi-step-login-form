@@ -10,15 +10,15 @@ interface Props {
 export default (props: Props) => {
   return (
     <form onSubmit={props.handleSubmit}>
-      <label>Enter your username</label> <br />
+      <label>Enter your password</label> <br />
       <input
-        name="username"
+        name="password"
         onChange={props.handleChange}
         value={props.password}
       />
       <br />
-      <button>Login</button>
       <button onClick={props.goBackToUsername}>Back</button>
+      <button>Login</button>
     </form>
   );
 };
